@@ -1,1 +1,22 @@
 // Mixins Here
+
+.images() {
+    img {
+        border-radius: 10px;
+        margin: 10px;
+    }
+}
+
+.button (@backgroundColor, @radius) {
+    width: 100px;
+    color: white;
+    padding: 8px 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: @backgroundColor;
+    border-radius: @radius;
+
+    &:hover {
+        background-color: rgb(1, 100, 100);
+    }
+}
